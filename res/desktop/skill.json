@@ -1,7 +1,7 @@
 {
-    "authorname": "OpenVoiceOS",
-    "foldername": "skill-ovos-date-time",
-    "url": "https://github.com/OpenVoiceOS/skill-ovos-date-time",
+    "authorname": "skutterbob",
+    "foldername": "ovos-skill-greenhome",
+    "url": "https://github.com/skutterbob/ovos-skill-greenhome",
     "branch": "dev",
     "license": "apache-2.0",
     "tags": [
@@ -14,11 +14,11 @@
         "world-time",
         "permissive-license"
     ],
-    "short_description": "Get the time, date, day of the week",
+    "short_description": "Personalised skill",
     "last_updated": "2022-10-11T16:36:06Z",
     "icon": "https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/calendar.svg",
-    "skillname": "Date and Time",
-    "description": "Get the local time or time for major cities around the world.  Times\nare given in 12-hour (2:30 pm) or 24-hour format (14:30) based on the\nTime Format setting at [Home](https://home.mycroft.ai/#/setting/basic)\n\nTime can optionally be shown on a display, like a digital clock.  See\nthe [Skill Setting](https://home.mycroft.ai/#/skill).",
+    "skillname": "Greenhome",
+    "description": "Greenhome skill",
     "examples": [],
     "credits": [
         "Mycroft AI (@MycroftAI)"
@@ -29,7 +29,6 @@
     ],
     "requirements": {
         "python": [
-            "timezonefinder",
             "pytz>=2022.1",
             "ovos_workshop~=0.0, >=0.0.11a4",
             "geocoder",

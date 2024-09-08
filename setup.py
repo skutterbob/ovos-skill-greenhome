@@ -3,7 +3,7 @@ import os
 from setuptools import setup
 from os import walk, path
 
-URL = "https://github.com/OpenVoiceOS/skill-ovos-hello-world"
+URL = "https://github.com/skutterbob/ovos-skill-greenhome"
 SKILL_CLAZZ = "GreenhomeSkill"  # needs to match __init__.py class name
 PYPI_NAME = "ovos-skill-greenhome"  # pip install PYPI_NAME
 
