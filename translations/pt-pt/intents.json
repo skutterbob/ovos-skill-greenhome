@@ -1,0 +1,7 @@
+{
+  "/intents/HowAreYou.intent": [
+    "Como (estás|andas)",
+    "Como tens (estado|andado)",
+    "Como foi o teu dia"
+  ]
+}
