@@ -117,7 +117,8 @@ class GreenhomeSkill(OVOSSkill):
         # submit password
         self.speak_dialog("radio.controls")
         self.gui.clear()
-        self.gui.show_url(self, self.vlc_url, override_idle=None, override_animations=False)
+        self.gui.show_url(self, "https://www.bbc.com/sport", override_idle=None, override_animations=False)
+        #self.gui.show_url(self, self.vlc_url, override_idle=None, override_animations=False)
         
         LOG.info("There are five types of log messages: 'info, debug, warning, error, and exception.")
         # Skills can log useful information. These will appear in the CLI and
