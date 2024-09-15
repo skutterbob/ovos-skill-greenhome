@@ -117,8 +117,35 @@ class GreenhomeSkill(OVOSSkill):
         # submit password
         self.speak_dialog("radio.controls")
         self.gui.clear()
-        self.gui.show_url(self, "https://www.bbc.com/sport", override_idle=None, override_animations=False)
-        #self.gui.show_url(self, self.vlc_url, override_idle=None, override_animations=False)
+        #self.gui.show_url(self, "https://www.bbc.com/sport", override_idle=True, override_animations=False)
+        self.gui.show_url(self, self.vlc_url, override_idle=None, override_animations=False)
+        
+        LOG.info("There are five types of log messages: 'info, debug, warning, error, and exception.")
+        # Skills can log useful information. These will appear in the CLI and
+        # in the skills.log file under ~/.mycroft/logs. LOG.info() is the most
+        # common log level, but it is recommended to use the others when
+        # appropriate:
+        # LOG.debug() - Messages useful for developers to debug the skill
+        # LOG.warning() - Indicates something unexpected happened, but the skill
+        #                 can recover
+        # LOG.error() - Indicates a recoverable error
+        # LOG.exception() - Indicates an exception that causes the skill to crash
+        #                  and is non-recoverable
+        if self.log_level == "WARNING":
+            LOG.warning("To be able to see debug logs, you need to change the 'log_level' setting to 'DEBUG' in the core configuration (mycroft.conf)")
+
+    @intent_handler("GreenhomeTest.intent")
+    def handle_greenhome_test_intent(self, message):
+        """This is a Padatious intent handler.
+        It is triggered using a list of sample phrases."""
+
+        # load browser
+        # goto url
+        # submit password
+        self.speak_dialog("greenhome.test")
+        self.gui.clear()
+        #self.gui.show_url(self, "https://www.bbc.com/sport", override_idle=True, override_animations=False)
+        self.gui.show_url(self, self.vlc_url, override_idle=True, override_animations=False)
         
         LOG.info("There are five types of log messages: 'info, debug, warning, error, and exception.")
         # Skills can log useful information. These will appear in the CLI and
